@@ -148,9 +148,9 @@ public class BlockEventHandler implements Listener
                     short amount;
 
                     if (tool == Material.IRON_PICKAXE)
-                        amount = 8;
+                        amount = (short) rootC.getInt(RootNode.IRONPICK_DURABILITY_MOD);
                     else
-                        amount = 22;
+                        amount = (short) rootC.getInt(RootNode.DIAMONDPICK_DURABILITY_MOD);
 
                     inHandStack.setDurability((short) (inHandStack.getDurability() + amount));
                 }

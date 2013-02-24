@@ -42,6 +42,11 @@ public enum RootNode implements ConfigNode
     /**
      * whether stone is hardened to encourage cave exploration over tunneling
      */
+    IRONPICK_DURABILITY_MOD
+            ("ExtraHardMode.Durability Settings.Iron Pickaxe", VarType.INTEGER, 8),
+    DIAMONDPICK_DURABILITY_MOD
+            ("ExtraHardMode.Durability Settings.Diamond Pickaxe", VarType.INTEGER, 22),
+    
     SUPER_HARD_STONE
             ("ExtraHardMode.World Rules.Mining.Inhibit Tunneling", VarType.BOOLEAN, true),
     /**
